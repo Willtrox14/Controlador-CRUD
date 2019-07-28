@@ -1,0 +1,13 @@
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\bin\Debug\Manejo_de_Base_de_Datos.exe.config
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\bin\Debug\Manejo_de_Base_de_Datos.exe
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\bin\Debug\Manejo_de_Base_de_Datos.pdb
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\obj\Debug\Manejo_de_Base_de_Datos.csprojResolveAssemblyReference.cache
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\obj\Debug\Manejo_de_Base_de_Datos.Form1.resources
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\obj\Debug\Manejo_de_Base_de_Datos.Properties.Resources.resources
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\obj\Debug\Manejo_de_Base_de_Datos.csproj.GenerateResource.Cache
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\obj\Debug\Manejo_de_Base_de_Datos.exe
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\obj\Debug\Manejo_de_Base_de_Datos.pdb
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\bin\Debug\Renci.SshNet.dll
+c:\users\william gonzalez m\documents\visual studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\obj\Debug\Manejo_de_Base_de_Datos.Ingresar.resources
+C:\Users\William Gonzalez M\Documents\Visual Studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\obj\Debug\Manejo_de_Base_de_Datos.ConsultAll.resources
+C:\Users\William Gonzalez M\Documents\Visual Studio 2012\Projects\Manejo_de_Base_de_Datos\Manejo_de_Base_de_Datos\obj\Debug\Manejo_de_Base_de_Datos.ConsultaEsp.resources
