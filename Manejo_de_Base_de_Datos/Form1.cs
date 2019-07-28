@@ -20,7 +20,8 @@ namespace Manejo_de_Base_de_Datos
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+            Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)

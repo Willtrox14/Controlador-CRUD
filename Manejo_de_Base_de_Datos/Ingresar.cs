@@ -42,42 +42,40 @@ namespace Manejo_de_Base_de_Datos
                     string nombre = textBox1.Text;
                     string cedula = textBox2.Text;
                     string edad = textBox3.Text;
+                    string query = "INSERT INTO ESTUDIANTE(Nombre,Cedula,Edad) VALUES ('" + nombre + "','" + cedula + "','" + edad + "')";
+                    Queries(query,cedula);
                     textBox1.Focus();
                     textBox1.Text = "";
                     textBox2.Text = "";
                     textBox3.Text = "";
-                    string query = "INSERT INTO ESTUDIANTE(Nombre,Cedula,Edad) VALUES ('" + nombre + "','" + cedula + "','" + edad + "')";
-                    Queries(query,cedula);
                 }
             }
         }
 
-        private void Queries(string query,string cedula) {
+        private void Queries(string query, string cedula)
+        {
             string securityString = "SELECT * FROM ESTUDIANTE WHERE Cedula = '" + cedula + "'";
             string MySqlConnectionString = "datasource=127.0.0.1;port=3306;user=root;password=;database=UNITEC;";
             MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
-            MySqlCommand security = new MySqlCommand(securityString, databaseConnection);
-            try { 
-            databaseConnection.Open();
-
-            MySqlDataReader myReader = security.ExecuteReader();
-            if(myReader.HasRows){
-                MessageBox.Show("Este estudiante ya esta registrado...");
-            }else{
-                MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
-                commandDatabase.CommandTimeout = 60;
-                try {
-                    MessageBox.Show("Estudiante Ingresado satisfactoriamente...");
+            MySqlCommand commandSecurity = new MySqlCommand(securityString, databaseConnection);
+            try {
+                databaseConnection.Open();
+                MySqlDataReader mySecurityReader = commandSecurity.ExecuteReader();
+                if (mySecurityReader.HasRows)
+                {
+                    MessageBox.Show("Ya existe un estudiante con esta cedula...");
                 }
-                catch (Exception e) {
-                    MessageBox.Show("El error es el siguiente: " + e.Message);
+                else
+                {
+                    mySecurityReader.Close();
+                    MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+                    commandDatabase.CommandTimeout = 60;
+                    MySqlDataReader myReader = commandDatabase.ExecuteReader();
+                    MessageBox.Show("Estudiante Ingresado");
                 }
-                MessageBox.Show("Estudiante Ingresado Satisfactoriamente...");
-            }
             }catch(Exception e){
-                MessageBox.Show("Hubo un error y es el siguiente: " + e);
+                MessageBox.Show("El error es: " + e.Message);
             }
-
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -114,12 +112,13 @@ namespace Manejo_de_Base_de_Datos
                         string nombre = textBox1.Text;
                         string cedula = textBox2.Text;
                         string edad = textBox3.Text;
+                        
+                        string query = "INSERT INTO ESTUDIANTE(Nombre,Cedula,Edad) VALUES ('" + nombre + "','" + cedula + "','" + edad + "')";
+                        Queries(query, cedula);
                         textBox1.Focus();
                         textBox1.Text = "";
                         textBox2.Text = "";
                         textBox3.Text = "";
-                        string query = "INSERT INTO ESTUDIANTE(Nombre,Cedula,Edad) VALUES ('" + nombre + "','" + cedula + "','" + edad + "')";
-                        Queries(query, cedula);
                     }
                 }
             }
