@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar.Designer.cs">
+      <DependentUpon>Actualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaEsp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +62,12 @@
     </Compile>
     <Compile Include="ConsultAll.Designer.cs">
       <DependentUpon>ConsultAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eliminarEsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eliminarEsp.Designer.cs">
+      <DependentUpon>eliminarEsp.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -71,11 +83,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Actualizar.resx">
+      <DependentUpon>Actualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaEsp.resx">
       <DependentUpon>ConsultaEsp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultAll.resx">
       <DependentUpon>ConsultAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminarEsp.resx">
+      <DependentUpon>eliminarEsp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

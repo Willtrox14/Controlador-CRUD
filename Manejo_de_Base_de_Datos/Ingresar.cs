@@ -55,7 +55,7 @@ namespace Manejo_de_Base_de_Datos
         private void Queries(string query, string cedula)
         {
             string securityString = "SELECT * FROM ESTUDIANTE WHERE Cedula = '" + cedula + "'";
-            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;user=root;password=;database=UNITEC;";
+            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;user=root;password=root;database=UNITEC;";
             MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
             MySqlCommand commandSecurity = new MySqlCommand(securityString, databaseConnection);
             try {

@@ -36,6 +36,8 @@ namespace Manejo_de_Base_de_Datos
                 if (textBox1.Text.Length > 8)
                 {
                     MessageBox.Show("Debe tener maximo 8 caracteres...");
+                    textBox1.Clear();
+                    textBox1.Focus();
                 }
                 else
                 {
@@ -51,7 +53,7 @@ namespace Manejo_de_Base_de_Datos
         private void Queries(string query)
         {
 
-            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;user=root;password=;database=UNITEC;";
+            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;user=root;password=root;database=UNITEC;";
             MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
             commandDatabase.CommandTimeout = 60;

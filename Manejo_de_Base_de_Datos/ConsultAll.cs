@@ -30,7 +30,7 @@ namespace Manejo_de_Base_de_Datos
         private void Queries(string query)
         {
 
-            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;user=root;password=;database=UNITEC;";
+            string MySqlConnectionString = "datasource=127.0.0.1;port=3306;user=root;password=root;database=UNITEC;";
             MySqlConnection databaseConnection = new MySqlConnection(MySqlConnectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
             commandDatabase.CommandTimeout = 60;
@@ -50,7 +50,7 @@ namespace Manejo_de_Base_de_Datos
             }
             catch (Exception e)
             {
-                MessageBox.Show("Hubo un error y es el siguiente: " + e);
+                MessageBox.Show("Hubo un error y es el siguiente: " + e.Message);
             }
 
         }
@@ -60,6 +60,11 @@ namespace Manejo_de_Base_de_Datos
             Form1 main = new Form1();
             main.Show();
             this.Close();
+        }
+
+        private void ConsultAll_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
